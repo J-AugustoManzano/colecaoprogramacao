@@ -1,4 +1,4 @@
-# c04ex10.awk 
+# c04ex11.awk 
 
 BEGIN {
 
