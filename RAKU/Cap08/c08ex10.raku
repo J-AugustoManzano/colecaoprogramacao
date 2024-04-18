@@ -1,10 +1,10 @@
 # c08ex10.raku
 
 sub fibonacciBase ($N, $X, $Y) {
-  if $N == 0 {
+  if ($N == 0) {
     return $X;
   }
-  if $N == 1 {
+  if ($N == 1) {
     return $Y;
   }
   return fibonacciBase($N - 1, $Y, $X + $Y);

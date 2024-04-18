@@ -1,13 +1,13 @@
 # c08ex09.raku
 
 sub FIBONACCI ($N) {
-  if $N == 0 {
+  if ($N == 0) {
     return 0;
   }
-  if $N == 1 {
+  if ($N == 1) {
     return 1;
   }
-  if $N >= 2 {
+  if ($N >= 2) {
     return FIBONACCI($N - 1) + FIBONACCI($N - 2);
   }
 }
