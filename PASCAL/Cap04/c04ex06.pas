@@ -1,7 +1,7 @@
 program c04ex06;
 
 var
-  A, B, Opcao: Integer;
+  A, B, Opcao: Real;
 
 begin
   Write('Entre o 1o. valor numerico: ');
