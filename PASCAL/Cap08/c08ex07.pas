@@ -104,7 +104,7 @@ begin
   Opcao := 0;
   while (Opcao <> 5) do
     begin
-      WriteLn('PESQUISA BINARIA DE NUMEROS');
+      WriteLn('PROGRAMA: PILHA');
       WriteLn;
       WriteLn('[1] - Empilhar');
       WriteLn('[2] - Desempilhar');
