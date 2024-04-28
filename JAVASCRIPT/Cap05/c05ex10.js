@@ -1,4 +1,4 @@
-// c05ex102.js
+// c05ex10.js
 
 const rls = require('readline-sync');
 
