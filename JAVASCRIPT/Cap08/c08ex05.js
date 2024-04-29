@@ -22,7 +22,7 @@ while (RESP == 'SIM') {
   I = 0;
   ACHA = false;
 
-  while (I <= 9 && ACHA === false) {
+  while (I <= 9 && ACHA == false) {
     if (PESQ == NOME[I]) {
       ACHA = true;
     } else {

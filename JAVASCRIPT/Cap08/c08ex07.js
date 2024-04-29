@@ -47,7 +47,7 @@ function Empilhar() {
 
 function Desempilhar() {
   const ELEMENTO = Retirar();
-  if (ELEMENTO !== null)
+  if (ELEMENTO != null)
     console.log(`Elemento ${ELEMENTO} retirado do topo da pilha.`);
   else
     console.log("Impossivel retirar elemento - pilha vazia.");
@@ -73,7 +73,7 @@ let Opcao = 0;
 
 Criar();
 Opcao = 0;
-while (Opcao !== 5) {
+while (Opcao != 5) {
   console.log("PROGRAMA: PILHA\n");
   console.log("[1] - Empilhar");
   console.log("[2] - Desempilhar");

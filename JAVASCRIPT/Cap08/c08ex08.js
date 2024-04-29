@@ -85,7 +85,7 @@ let OPCAO = 0;
 
 Criar();
 OPCAO = 0;
-while (OPCAO !== 6) {
+while (OPCAO != 6) {
   console.log("PROGRAMA: FILA\n");
   console.log("[1] - Entrada");
   console.log("[2] - Saida");
