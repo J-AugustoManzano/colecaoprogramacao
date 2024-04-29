@@ -7,7 +7,6 @@ function validaNumero(Numero) {
   return REGEX.test(Numero);
 }
 
-
 let Numero;
 
 do {
