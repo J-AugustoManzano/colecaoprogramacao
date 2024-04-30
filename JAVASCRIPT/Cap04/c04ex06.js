@@ -34,7 +34,7 @@ switch (Opcao) {
     break;
   case 4:
     console.log('Calculo de divisao');
-    if (B === 0)
+    if (B == 0)
       console.log('Resultado: ERRO');
     else
       console.log(`Resultado: ${(A / B).toFixed(2)}`);
