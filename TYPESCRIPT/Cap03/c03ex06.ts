@@ -8,7 +8,7 @@ let tamanho: number = palavra.length;
 
 let copias = [];
 
-let esqNP: string = palavra.substring(0, 6);
+let esqNP: string = palavra.substring(0, 3);
 let dirNP: string = palavra.substring(7, tamanho)
 let novaPalavra: string = esqNP + 'O' + dirNP;
 
