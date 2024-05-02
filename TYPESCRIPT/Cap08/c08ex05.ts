@@ -17,7 +17,7 @@ for (I = 0; I <= 9; ++I) {
   NOME[I] = rls.question(DADO);
 }
 
-while (RESP === 'SIM') {
+while (RESP == 'SIM') {
   PESQ = rls.question('\nEntre o nome a ser pesquisado: ');
   I = 0;
   ACHA = false;
@@ -39,7 +39,7 @@ while (RESP === 'SIM') {
   do {
     RESPOSTA = rls.question('\nDeseja continuar? (SIM/NAO): ');
     RESP = RESPOSTA.toUpperCase();
-    if (RESP !== 'SIM' && RESP !== 'NAO') {
+    if (RESP != 'SIM' && RESP != 'NAO') {
       console.log('Informe apenas SIM ou NAO.');
     }
   } while (RESP != 'SIM' && RESP != 'NAO');

@@ -57,7 +57,7 @@ while (RESP == 'SIM') {
     if (RESP != 'SIM' && RESP != 'NAO') {
       console.log('Informe apenas SIM ou NAO.\n');
     }
-  } while (RESP !== 'SIM' && RESP !== 'NAO');
+  } while (RESP != 'SIM' && RESP != 'NAO');
 }
 
 console.log("");
