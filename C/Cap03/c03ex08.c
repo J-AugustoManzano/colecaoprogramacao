@@ -1,4 +1,4 @@
-// c03ex07.c
+// c03ex08.c
 
 /*
  Programa exemplo para operações de duas entradas
