@@ -7,7 +7,7 @@ let I: number, J: number, X: number, PESQ: number;
 let COMECO: number, FINAL: number, MEIO: number, DADO: string;
 let ACHA: boolean;
 
-let RESP: string = 'SIM';
+let RESP: string;
 let RESPOSTA: string;
 
 console.log("PESQUISA BINARIA DE NUMEROS\n");
@@ -27,6 +27,7 @@ for (I = 0; I <= 8; ++I) {
   }
 }
 
+RESP  = 'SIM';
 while (RESP == 'SIM') {
   PESQ = rls.questionInt('\nEntre o numero a ser pesquisado: ');
 
