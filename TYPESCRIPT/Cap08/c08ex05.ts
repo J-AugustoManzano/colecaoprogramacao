@@ -4,7 +4,6 @@ import * as rls from 'readline-sync';
 
 let NOME: string[] = new Array(10).fill('').map(() => 
 new Array(50).fill('').join(''));
-let RESP: string = 'SIM';
 let PESQ: string = new Array(50).fill('').join('');
 let RESPOSTA: string = new Array(4).fill('').join('');
 let I: number;
@@ -17,6 +16,7 @@ for (I = 0; I <= 9; ++I) {
   NOME[I] = rls.question(DADO);
 }
 
+let RESP: string = 'SIM';
 while (RESP == 'SIM') {
   PESQ = rls.question('\nEntre o nome a ser pesquisado: ');
   I = 0;
