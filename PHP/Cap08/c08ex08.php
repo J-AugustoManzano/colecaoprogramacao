@@ -93,7 +93,7 @@ function atual()
   global $INICIO;
 
   if (!vazia()) {
-    printf("%d - primeiro elemento da fila.\n", $MATRIZ[1]);
+    printf("%d - primeiro elemento da fila.\n", $MATRIZ[0]);
   } else {
     printf("Impossivel apresentar - fila vazia.\n");
   }
