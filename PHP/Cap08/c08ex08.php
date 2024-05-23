@@ -48,7 +48,7 @@ function retirar(&$elemento): bool
   if (vazia()) {
     return false;
   } else {
-    $elemento = $MATRIZ[1];
+    $elemento = $MATRIZ[0];
     for ($i = 1; $i < $INICIO; $i++) {
       $MATRIZ[$i] = $MATRIZ[$i + 1];
     }
