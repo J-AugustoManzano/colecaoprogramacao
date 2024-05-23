@@ -49,7 +49,7 @@ function retirar(&$elemento): bool
     return false;
   } else {
     $elemento = $MATRIZ[0];
-    for ($i = 1; $i < $INICIO; $i++) {
+    for ($i = 0; $i <= $INICIO - 1; $i++) {
       $MATRIZ[$i] = $MATRIZ[$i + 1];
     }
     $INICIO = $INICIO - 1;
