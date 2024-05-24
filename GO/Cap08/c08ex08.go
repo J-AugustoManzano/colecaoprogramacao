@@ -1,4 +1,4 @@
-// c08ex08.go
+a// c08ex08.go
 
 package main
 import "fmt"
@@ -119,7 +119,6 @@ func main() {
       case 3: atual()
       case 4: exibicao()
       case 5: criar()
-      case 6: break
       default:
         fmt.Print("Opcao invalida. Tente novamente.\n")
         fmt.Println()

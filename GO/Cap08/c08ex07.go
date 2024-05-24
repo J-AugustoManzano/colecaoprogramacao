@@ -106,7 +106,6 @@ func main() {
       case 2: desempilhar()
       case 3: mostrar()
       case 4: criar()
-      case 5: break
       default:
         fmt.Print("Opcao invalida. Tente novamente.\n")
       }
