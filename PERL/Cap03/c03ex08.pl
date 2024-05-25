@@ -2,33 +2,29 @@
 
 #!/usr/bin/perl
 
-# Programa exemplo para operações de duas entradas
-# com cálculo de adição e apresentação de resultado.
+# Programa exemplo para operações de duas entradas   #
+# com cálculo de adição e apresentação de resultado. #
 
-BEGIN {
-
-  print "ADICAO DE NUMEROS";
-  print;
+print "ADICAO DE NUMEROS\n";
+print "\n";
   
-  # Entrada de dados
+# Entrada de dados
   
-  printf "Entre o 1o. valor numerico: ";
-  $A = <STDIN>;
-  chomp($A);
+printf "Entre o 1o. valor numerico: ";
+$A = <STDIN>;
+chomp($A);
     
-  printf "Entre o 2o. valor numerico: ";
-  $B = <STDIN>;
-  chomp($B);
+printf "Entre o 2o. valor numerico: ";
+$B = <STDIN>;
+chomp($B);
   
-  # Processamento de dados
+# Processamento de dados
     
-  $X = $A + $B; # Cálculo da adição
+$X = $A + $B; # Cálculo da adição
   
-  # Saída de dados
+# Saída de dados
     
-  printf "Resultado = %i\n\n", $X;
+printf "Resultado = %i\n\n", $X;
     
-  printf "Tecle <Enter> para encerrar... ";
-  <STDIN>;
-    
-}
+printf "Tecle <Enter> para encerrar... ";
+<STDIN>;
