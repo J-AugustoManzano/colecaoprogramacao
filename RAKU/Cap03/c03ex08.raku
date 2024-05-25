@@ -1,7 +1,7 @@
 # c03ex08.raku 
 
-# Programa exemplo para operações de duas entradas
-# com cálculo de adição e apresentação de resultado.
+# Programa exemplo para operações de duas entradas   #
+# com cálculo de adição e apresentação de resultado. #
 
 say "ADICAO DE NUMEROS\n";
 
