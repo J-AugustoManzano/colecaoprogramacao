@@ -31,7 +31,7 @@ var
 
 begin
   repeat
-    Write('Entre um valor numerico inteiro: ');
+    Write('Entre um valor numerico: ');
     Readln(Numero);
     Writeln;
 
