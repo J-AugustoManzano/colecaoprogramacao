@@ -16,7 +16,7 @@ do {
   }
 
   if (!validaNumero($Numero)) {
-    printf("\nErro: Entre um numero inteiro.\n");
+    printf("\nErro: Entre um numero.\n");
     printf("\n");
     continue;
   }
