@@ -5,7 +5,7 @@
 print "Entre um numero inteiro: "
 numero = gets.chomp.to_i
 
-if (numero >= 20( && (numero <= 90)
+if (numero >= 20) && (numero <= 90)
   puts "O numero esta na faixa de 20 a 90."
 else
   puts "O numero esta fora da faixa de 20 a 90."
