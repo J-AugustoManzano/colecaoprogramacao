@@ -4,7 +4,7 @@ function Fibonacci(N: Integer): Integer;
 begin
   if (N = 0) then
     Fibonacci := 0;
-  if N = 1 then
+  if (N = 1) then
     Fibonacci := 1;
   if (N >= 2) then
     Fibonacci := Fibonacci(N - 1) + Fibonacci(N - 2);
