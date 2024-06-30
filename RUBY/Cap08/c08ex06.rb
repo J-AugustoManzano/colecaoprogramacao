@@ -4,7 +4,7 @@
 
 numero = []
 
-puts "PESQUISA BINARIA DE numeroS\n\n"
+puts "PESQUISA BINARIA DE NUMEROS\n\n"
 
 for i in 0..9
   printf "Entre o %2do. numero: ", (i + 1)
