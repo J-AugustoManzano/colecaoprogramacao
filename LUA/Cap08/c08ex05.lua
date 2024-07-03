@@ -2,7 +2,7 @@
 
 sf = string.format
 
-print("PESQUISA SEQUENCIAL DE nome\n")
+print("pesq SEQUENCIAL DE nome\n")
 
 nome = {}
 
@@ -14,13 +14,13 @@ end
 resp = "SIM"
 while (resp == "SIM") do
   print()
-  io.write("Entre o nome a ser pesquisado: ")
-  local pesquisa = io.read()
+  io.write("Entre o nome a ser pesqdo: ")
+  local pesq = io.read()
 
   local i = 1
   local acha = false
   while (i <= 10 and acha == false) do
-    if (pesquisa == nome[i]) then
+    if (pesq == nome[i]) then
       acha = true
     else
       i = i + 1
@@ -29,10 +29,10 @@ while (resp == "SIM") do
 
   if (acha == true) then
     print()
-    io.write(sf("%s foi localizado na posicao %d\n", pesquisa, i))
+    io.write(sf("%s foi localizado na posicao %d\n", pesq, i))
   else
     print()
-    io.write(sf("%s nao foi localizado\n", pesquisa))
+    io.write(sf("%s nao foi localizado\n", pesq))
   end
 
   print()
