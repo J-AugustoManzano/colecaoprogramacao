@@ -51,13 +51,13 @@ print("----- ", end="")
 print("----- ")
 
 for i in range(8):
-    print(f"{i+1:5d} ", end="")
-    print(f"{ALUNO[i].Nome:30} ", end="")
-    print(f"{ALUNO[i].Sala:4} ", end="")
-    print(f"{int(ALUNO[i].Turma):5} ", end="")
-    for j in range(4):
-        print(f"{ALUNO[i].Notas[j]:5.1f} ", end="")
-    print()
+  print(f"{i+1:5d} ", end="")
+  print(f"{ALUNO[i].Nome:30} ", end="")
+  print(f"{ALUNO[i].Sala:4} ", end="")
+  print(f"{int(ALUNO[i].Turma):5} ", end="")
+  for j in range(4):
+    print(f"{ALUNO[i].Notas[j]:5.1f} ", end="")
+  print()
 
 print()
 input("Tecle <Enter> para encerrar... ")
