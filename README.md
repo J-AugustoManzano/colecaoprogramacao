@@ -1,4 +1,4 @@
-LICENÇA DE USO E RETRIÇÕES
+LICENÇA DE USO E RESTRIÇÕES
 
 Este repositório faz parte integrante da "Coleção Linguagens: Programação de Computadores", um conjunto de obras que será lançado em 2025. O material disponibilizado aqui está estritamente vinculado ao tema de cada volume da coleção, que aborda uma linguagem de programação específica. O acesso e uso deste repositório são restritos apenas aos proprietários do título correspondente.
 
