@@ -1,4 +1,4 @@
-// c05ex05.cpp
+// c05ex04.cpp
 
 #include <iostream>
 #include <cctype>
