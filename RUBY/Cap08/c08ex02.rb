@@ -28,7 +28,7 @@ loop do
       puts "Entrada valida fornecida: #{$numero}\n"
       break
     else
-      puts "Erro: Entre um número valido.\n\n"
+      puts "Erro: Entre um numero valido.\n\n"
     end
   end
 end
