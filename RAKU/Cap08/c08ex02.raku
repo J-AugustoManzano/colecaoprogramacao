@@ -7,7 +7,7 @@ sub validaInteiro($ENTRADA) {
 my $NUMERO;
 
 loop {
-  print "Entre um valor numerico inteiro: ";
+  print "Entre um valor numerico: ";
   $NUMERO = prompt();
   say "";
 
@@ -16,7 +16,7 @@ loop {
     next;
   }
   if (!validaInteiro($NUMERO)) {
-    say "Erro: Entre um numero inteiro.\n";
+    say "Erro: Entre um valor numerico.\n";
     next;
   }
 
