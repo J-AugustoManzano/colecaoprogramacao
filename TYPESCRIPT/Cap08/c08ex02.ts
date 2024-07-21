@@ -19,7 +19,7 @@ do {
   }
 
   if (!(validaNumero(Numero))) {
-    console.log("\nErro: Entre um numero inteiro.");
+    console.log("\nErro: Entre um valor numerico.");
     console.log("");
     continue;
   }
