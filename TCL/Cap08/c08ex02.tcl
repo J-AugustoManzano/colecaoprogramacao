@@ -19,7 +19,7 @@ while {1} {
   }
 
   if {![validaNumero $Numero]} {
-    puts "\nErro: Entre um numero inteiro."
+    puts "\nErro: Entre um valor numerico."
     puts ""
     continue
   }
