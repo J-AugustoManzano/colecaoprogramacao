@@ -104,14 +104,15 @@ int main(void) {
     cout << "Escolha uma opcao: ";
     cin >> Opcao;
     cout << "\n";
-    switch (Opcao) {
-      case 1: Empilhar();    break;
-      case 2: Desempilhar(); break;
-      case 3: Mostrar();     break;
-      case 4: Criar();       break;
-      case 5: cout << "Saindo do programa...\n"; break;
-      default:
-        cout << "Opcao invalida. Tente novamente.\n\n";
+    if (Opcao != 5) {
+      switch (Opcao) {
+        case 1: Empilhar();    break;
+        case 2: Desempilhar(); break;
+        case 3: Mostrar();     break;
+        case 4: Criar();       break;
+        default:
+          printf("Opcao invalida. Tente novamente.\n\n");
+      }
     }
   }
   return 0;
