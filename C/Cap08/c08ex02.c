@@ -42,7 +42,7 @@ int main(void) {
     }
 
     if (!validaNumero(Numero)) {
-      printf("Erro: Entre um numero	.\n");
+      printf("Erro: Entre um numero	valido.\n");
       printf("\n");
       continue;
     }
