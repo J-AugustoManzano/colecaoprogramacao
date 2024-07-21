@@ -33,7 +33,7 @@ fn main() {
       println!("\nEntrada valida fornecida: {}\n", numero);
       break;
     } else {
-      println!("/nErro: Entre um número valido.\n");
+      println!("/nErro: Entre um numero valido.\n");
     }
   }
 
