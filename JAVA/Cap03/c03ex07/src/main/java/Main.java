@@ -1,4 +1,4 @@
-// Projeto: c03ex06
+// Projeto: c03ex07
 
 import java.util.Scanner;
 import static java.lang.System.out;
