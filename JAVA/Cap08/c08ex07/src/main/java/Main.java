@@ -74,7 +74,7 @@ public class Main {
       else
           for (int I = TOPO - 1; I >= 0; I--)
               out.printf("Posicao: %2d = %d%n", I + 1, MATRIZ[I]);
-      System.out.println();
+      out.println();
   }
 
     public static void Criar() {
