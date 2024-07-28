@@ -79,7 +79,7 @@ public class Main {
         if (Vazia())
             out.println("Impossivel apresentar - fila vazia.");
         else {
-            for (int I = 0; I < INICIO; I++)
+            for (int I = 0; I <= INICIO - 1; I++)
                 out.printf("Posicao: %2d = %d%n", I + 1, MATRIZ[I]);
         }
         out.println();
@@ -87,7 +87,7 @@ public class Main {
 
     public static void Criar() {
         INICIO = 0;
-        for (int i = 0; i < MATRIZ.length; i++)
+        for (int i = 0; i <= FIM - 1; i++)
             MATRIZ[i] = 0;
     }
 
