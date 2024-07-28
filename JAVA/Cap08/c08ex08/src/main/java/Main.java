@@ -26,7 +26,6 @@ public class Main {
 
     public static boolean Adicionar(int ELEMENTO) {
         if (Cheia()) {
-            out.println("Impossivel adicionar - fila lotada.");
             return false;
         } else {
             MATRIZ[INICIO] = ELEMENTO;
@@ -36,14 +35,15 @@ public class Main {
     }
 
     public static boolean Retirar(int[] ELEMENTO) {
+        int I;
         if (Vazia()) {
-            out.println("Impossivel retirar elemento - fila vazia.");
-            ELEMENTO[0] = -1;
             return false;
         } else {
             ELEMENTO[0] = MATRIZ[0];
-            System.arraycopy(MATRIZ, 1, MATRIZ, 0, INICIO - 1);
-            INICIO--;
+            for (I = 0; I < INICIO - 1; I++) {
+                MATRIZ[I] = MATRIZ[I + 1];
+            }
+            --INICIO;
             return true;
         }
     }
@@ -54,8 +54,11 @@ public class Main {
         out.print("Entre com um elemento numerico: ");
         X = scanner.nextInt();
         out.println();
-        if (Adicionar(X))
+        if (Adicionar(X)) {
             out.println("Elemento " + X + " inserido na posicao " + INICIO);
+        } else {
+            out.println("Impossivel adicionar " + X + " - fila lotada.");
+        }
         out.println();
     }
 
@@ -64,31 +67,37 @@ public class Main {
         if (Retirar(ELEMENTO)) {
             out.print("Elemento " + ELEMENTO[0]);
             out.println(" retirado do inicio da fila.");
+        } else {
+            out.println("Impossivel retirar elemento - fila vazia.");
         }
         out.println();
     }
 
     public static void Atual() {
-        if (Vazia())
+        if (Vazia()) {
             out.println("Impossivel apresentar - fila vazia.");
-        else
+        } else {
             out.println(MATRIZ[0] + " - primeiro elemento da fila.");
+        }
         out.println();
     }
 
     public static void Exibicao() {
-        if (Vazia())
+        if (Vazia()) {
             out.println("Impossivel apresentar - fila vazia.");
-        else
-            for (int I = 0; I <= INICIO - 1; I++)
-                out.println("Posicao: " + (I + 1) + " = " + MATRIZ[I]);
+        } else {
+            for (int I = 0; I < INICIO; I++) {
+                out.printf("Posicao: %2d = %d%n", I + 1, MATRIZ[I]);
+            }
+        }
         out.println();
     }
 
     public static void Criar() {
         INICIO = 0;
-        for (int i = 0; i < MATRIZ.length; i++)
+        for (int i = 0; i < MATRIZ.length; i++) {
             MATRIZ[i] = 0;
+        }
     }
 
     public static void main(String[] args) {
@@ -105,8 +114,8 @@ public class Main {
             out.println("[6] - Sair\n");
             out.print("Escolha uma opcao: ");
             OPCAO = scanner.nextInt();
-            System.out.println();
-            if (OPCAO != 6)
+            out.println();
+            if (OPCAO != 6) {
                 switch (OPCAO) {
                     case 1:
                         Entrada();
@@ -127,6 +136,7 @@ public class Main {
                         out.println("Opcao invalida. Tente novamente.\n");
                         break;
                 }
+            }
         }
     }
 }
