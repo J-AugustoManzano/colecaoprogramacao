@@ -79,7 +79,7 @@ public class Main {
 
     public static void Criar() {
         TOPO = 0;
-        for (int i = 0; i < MATRIZ.length; i++) {
+        for (int i = 0; i <= LIMITE - 1; i++) {
             MATRIZ[i] = 0;
         }
     }
