@@ -99,8 +99,11 @@ class Program
 
     static void Criar()
     {
-        Array.Clear(MATRIZ, 0, MATRIZ.Length);
         INICIO = 0;
+        for (int I = 0; I <= FIM - 1; I++)
+        {
+            MATRIZ[I] = 0;
+        }
     }
 
     static void Main(string[] args)

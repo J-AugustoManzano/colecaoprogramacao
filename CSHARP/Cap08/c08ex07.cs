@@ -91,7 +91,10 @@ class Program
     static void Criar()
     {
         TOPO = 0;
-        Array.Clear(MATRIZ, 0, MATRIZ.Length);
+        for (int I = 0; I <= LIMITE - 1; I++)
+        {
+            MATRIZ[I] = 0;
+        }
     }
 
     static void Main(string[] args)
