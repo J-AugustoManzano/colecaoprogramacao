@@ -29,7 +29,6 @@ class Program
     {
         if (Cheia())
         {
-            WriteLine("Impossivel adicionar - fila lotada.");
             return false;
         }
         else
@@ -44,8 +43,7 @@ class Program
     {
         if (Vazia())
         {
-            WriteLine("Impossivel retirar elemento - fila vazia.");
-            ELEMENTO = -1;
+            ELEMENTO = 0;
             return false;
         }
         else
@@ -65,6 +63,8 @@ class Program
         WriteLine();
         if (Adicionar(X))
             WriteLine("Elemento " + X + " inserido na posicao " + INICIO);
+        else
+            WriteLine("Impossivel adicionar - fila lotada.");
         WriteLine();
     }
 
@@ -73,6 +73,8 @@ class Program
         int ELEMENTO;
         if (Retirar(out ELEMENTO))
             WriteLine("Elemento " + ELEMENTO + " retirado do inicio da fila.");
+        else 
+            WriteLine("Impossivel retirar elemento - fila vazia.");
         WriteLine();
     }
 
