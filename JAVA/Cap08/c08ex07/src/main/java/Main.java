@@ -25,10 +25,9 @@ public class Main {
     }
 
     public static boolean Adicionar(int ELEMENTO) {
-        if (Cheia()) {
-            out.println("Impossivel adicionar - pilha cheia.");
+        if (Cheia())
             return false;
-        } else {
+        else {
             MATRIZ[TOPO] = ELEMENTO;
             TOPO++;
             return true;
@@ -36,10 +35,9 @@ public class Main {
     }
 
     public static boolean Retirar(int[] ELEMENTO) {
-        if (Vazia()) {
-            out.println("Impossivel retirar - pilha vazia.");
+        if (Vazia())
             return false;
-        } else {
+        else {
             TOPO--;
             ELEMENTO[0] = MATRIZ[TOPO];
             MATRIZ[TOPO] = 0;
@@ -55,6 +53,8 @@ public class Main {
         out.println();
         if (Adicionar(X))
             out.println("Elemento " + X + " inserido na posicao " + TOPO);
+        else
+           out.println("Impossivel adicionar " + X + " - pilha cheia.");
         out.println();
     }
 
@@ -63,7 +63,8 @@ public class Main {
         if (Retirar(ELEMENTO)) {
             out.print("Elemento " + ELEMENTO[0]);
             out.println(" retirado do topo da pilha.");
-        }
+        } else
+            out.println("Impossivel retirar - pilha vazia.");
         out.println();
     }
 
@@ -74,13 +75,12 @@ public class Main {
           for (int I = TOPO - 1; I >= 0; I--)
               out.printf("Posicao: %2d = %d%n", I + 1, MATRIZ[I]);
       out.println();
-  }
+    }
 
     public static void Criar() {
         TOPO = 0;
-        for (int i = 0; i <= LIMITE - 1; i++) {
+        for (int i = 0; i <= LIMITE - 1; i++)
             MATRIZ[i] = 0;
-        }
     }
 
     public static void main(String[] args) {
