@@ -26,7 +26,6 @@ Module Program
 
     Function Adicionar(ByVal ELEMENTO As Integer) As Boolean
         If (Cheia()) Then
-            WriteLine("Impossivel adicionar - pilha cheia.")
             Return False
         Else
             MATRIZ(TOPO) = ELEMENTO
@@ -37,8 +36,6 @@ Module Program
 
     Function Retirar(ByRef ELEMENTO As Integer) As Boolean
         If (Vazia()) Then
-            WriteLine("Impossivel retirar - pilha vazia.")
-            ELEMENTO = -1
             Return False
         Else
             TOPO -= 1
@@ -55,6 +52,8 @@ Module Program
         WriteLine()
         If (Adicionar(X)) Then
             WriteLine("Elemento " & X & " inserido na posicao " & TOPO)
+        Else
+            WriteLine("Impossivel adicionar - pilha cheia.")
         End If
         WriteLine()
     End Sub
@@ -64,6 +63,8 @@ Module Program
         If (Retirar(ELEMENTO)) Then
             Write("Elemento " & ELEMENTO)
             WriteLine(" retirado do topo da pilha.")
+        Else
+            WriteLine("Impossivel retirar - pilha vazia.")
         End If
         WriteLine()
     End Sub

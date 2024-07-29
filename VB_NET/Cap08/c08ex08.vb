@@ -26,7 +26,6 @@ Module Program
 
     Function Adicionar(ByVal ELEMENTO As Integer) As Boolean
         If (Cheia()) Then
-            WriteLine("Impossivel adicionar - fila lotada.")
             Return False
         Else
             MATRIZ(INICIO) = ELEMENTO
@@ -37,12 +36,12 @@ Module Program
 
     Function Retirar(ByRef ELEMENTO As Integer) As Boolean
         If (Vazia()) Then
-            WriteLine("Impossivel retirar elemento - fila vazia.")
-            ELEMENTO = -1
             Return False
         Else
             ELEMENTO = MATRIZ(0)
-            Array.Copy(MATRIZ, 1, MATRIZ, 0, INICIO - 1)
+            For I As Integer = 0 To INICIO - 2
+                MATRIZ(I) = MATRIZ(I + 1)
+            Next
             INICIO -= 1
             Return True
         End If
@@ -55,6 +54,8 @@ Module Program
         WriteLine()
         If (Adicionar(X)) Then
             WriteLine("Elemento " & X & " inserido na posicao " & INICIO)
+        Else
+            WriteLine("Impossivel adicionar - fila lotada.")
         End If
         WriteLine()
     End Sub
@@ -63,6 +64,8 @@ Module Program
         Dim ELEMENTO As Integer
         If (Retirar(ELEMENTO)) Then
             WriteLine("Elemento " & ELEMENTO & " retirado do inicio da fila.")
+        Else
+            WriteLine("Impossivel retirar elemento - fila vazia.")
         End If
         WriteLine()
     End Sub
