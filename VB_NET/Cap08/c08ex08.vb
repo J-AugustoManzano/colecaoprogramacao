@@ -91,9 +91,12 @@ Module Program
     End Sub
 
     Sub Criar()
-        Array.Clear(MATRIZ, 0, MATRIZ.Length)
         INICIO = 0
+        For I As Integer = 1 To FIM
+            MATRIZ(I) = 0
+        Next
     End Sub
+
 
     Sub Main(args As String())
         Criar()

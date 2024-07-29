@@ -82,7 +82,9 @@ Module Program
 
     Sub Criar()
         TOPO = 0
-        Array.Clear(MATRIZ, 0, MATRIZ.Length)
+        For I As Integer = 0 To LIMITE - 1
+            MATRIZ(I) = 0
+        Next
     End Sub
 
     Sub Main(args As String())
