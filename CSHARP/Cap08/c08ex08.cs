@@ -64,7 +64,7 @@ class Program
         if (Adicionar(X))
             WriteLine("Elemento " + X + " inserido na posicao " + INICIO);
         else
-            WriteLine("Impossivel adicionar - fila lotada.");
+            WriteLine("Impossivel adicionar " + X + " - fila lotada.");
         WriteLine();
     }
 
@@ -80,20 +80,20 @@ class Program
 
     static void Atual()
     {
-        if (Vazia())
-            WriteLine("Impossivel apresentar - fila vazia.");
-        else
+        if (!(Vazia()))
             WriteLine(MATRIZ[0] + " - primeiro elemento da fila.");
+        else
+            WriteLine("Impossivel apresentar - fila vazia.");
         WriteLine();
     }
 
     static void Exibicao()
     {
-        if (Vazia())
-            WriteLine("Impossivel apresentar - fila vazia.");
-        else
+        if (!(Vazia()))
             for (int I = 0; I < INICIO; I++)
                 WriteLine("Posicao: {0,2} = {1}", I + 1, MATRIZ[I]);
+        else
+            WriteLine("Impossivel apresentar - fila vazia.");
         WriteLine();
     }
 

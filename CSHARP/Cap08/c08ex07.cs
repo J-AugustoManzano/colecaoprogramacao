@@ -64,7 +64,7 @@ class Program
         if (Adicionar(X))
             WriteLine("Elemento " + X + " inserido na posicao " + TOPO);
         else
-            WriteLine("Impossivel adicionar - pilha cheia.");
+            WriteLine("Impossivel adicionar " + X + " - pilha cheia.");
         WriteLine();
     }
 
@@ -80,11 +80,11 @@ class Program
 
     static void Mostrar()
     {
-        if (Vazia())
-            WriteLine("Impossivel apresentar - pilha vazia.");
-        else
+        if (!(Vazia()))
             for (int I = TOPO - 1; I >= 0; I--)
                 WriteLine("Posicao: {0,2} = {1}", I + 1, MATRIZ[I]);
+        else
+            WriteLine("Impossivel apresentar - pilha vazia.");
         WriteLine();
     }
 
