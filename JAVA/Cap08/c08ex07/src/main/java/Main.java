@@ -38,7 +38,6 @@ public class Main {
     public static boolean Retirar(int[] ELEMENTO) {
         if (Vazia()) {
             out.println("Impossivel retirar - pilha vazia.");
-            ELEMENTO[0] = -1;
             return false;
         } else {
             TOPO--;
