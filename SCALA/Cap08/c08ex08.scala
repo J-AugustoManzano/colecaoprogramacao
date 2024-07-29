@@ -25,7 +25,6 @@ object Main {
 
   def Adicionar(ELEMENTO: Int): Boolean = {
     if (Cheia()) {
-      println("Impossivel adicionar - fila lotada.")
       false
     } else {
       MATRIZ(INICIO) = ELEMENTO
@@ -36,7 +35,6 @@ object Main {
 
   def Retirar(ELEMENTO: Array[Int]): Boolean = {
     if (Vazia()) {
-      println("Impossivel retirar - fila vazia.")
       false
     } else {
       ELEMENTO(0) = MATRIZ(0)
@@ -54,6 +52,8 @@ object Main {
     println()
     if (Adicionar(X)) {
       println(s"Elemento $X inserido na posicao $INICIO")
+    } else {
+      println(s"Impossivel adicionar $X - fila lotada.")
     }
     println()
   }
@@ -62,26 +62,28 @@ object Main {
     val ELEMENTO = new Array[Int](1)
     if (Retirar(ELEMENTO)) {
       println(s"Elemento ${ELEMENTO(0)} retirado do inicio da fila.")
+    } else {
+      println("Impossivel retirar - fila vazia.")
     }
     println()
   }
 
   def Atual(): Unit = {
-    if (Vazia()) {
-      println("Impossivel apresentar - fila vazia.")
-    } else {
+    if (!(Vazia())) {
       println(s"${MATRIZ(0)} - primeiro elemento da fila.")
+    } else {
+      println("Impossivel apresentar - fila vazia.")
     }
     println()
   }
 
   def Exibicao(): Unit = {
-    if (Vazia()) {
-      println("Impossivel apresentar - fila vazia.")
-    } else {
+    if (!(Vazia())) {
       for (I <- 0 to INICIO - 1) {
         printf("Posicao: %2d = %d%n", I + 1, MATRIZ(I))
       }
+    } else {
+      println("Impossivel apresentar - fila vazia.")
     }
     println()
   }

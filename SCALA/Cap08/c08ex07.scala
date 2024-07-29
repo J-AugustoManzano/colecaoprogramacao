@@ -25,7 +25,6 @@ object Main {
 
   def Adicionar(ELEMENTO: Int): Boolean = {
     if (Cheia()) {
-      println("Impossivel adicionar - pilha cheia.")
       false
     } else {
       MATRIZ(TOPO) = ELEMENTO
@@ -36,7 +35,6 @@ object Main {
 
   def Retirar(ELEMENTO: Array[Int]): Boolean = {
     if (Vazia()) {
-      println("Impossivel retirar - pilha vazia.")
       false
     } else {
       TOPO -= 1
@@ -52,6 +50,8 @@ object Main {
     println()
     if (Adicionar(X)) {
       println(s"Elemento $X inserido na posicao $TOPO")
+    } else {
+      println(s"Impossivel adicionar $X - pilha cheia.")
     }
     println()
   }
@@ -60,17 +60,19 @@ object Main {
     val ELEMENTO = new Array[Int](1)
     if (Retirar(ELEMENTO)) {
       println(s"Elemento ${ELEMENTO(0)} retirado do topo da pilha.")
+    } else {
+      println("Impossivel retirar - pilha vazia.")
     }
     println()
   }
 
   def Mostrar(): Unit = {
-    if (Vazia()) {
-      println("Impossivel apresentar - pilha vazia.")
-    } else {
+    if (!(Vazia())) {
       for (I <- TOPO - 1 to 0 by -1) {
         printf("Posicao: %2d = %d%n", I + 1, MATRIZ(I))
       }
+    } else {
+      println("Impossivel apresentar - pilha vazia.")
     }
     println()
   }
@@ -101,7 +103,7 @@ object Main {
           case 2 => Desempilhar()
           case 3 => Mostrar()
           case 4 => Criar()
-          case _ => 
+          case _ =>
             println("Opcao invalida. Tente novamente.\n")
         }
       }
