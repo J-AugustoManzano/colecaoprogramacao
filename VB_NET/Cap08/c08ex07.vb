@@ -53,7 +53,7 @@ Module Program
         If (Adicionar(X)) Then
             WriteLine("Elemento " & X & " inserido na posicao " & TOPO)
         Else
-            WriteLine("Impossivel adicionar - pilha cheia.")
+            WriteLine("Impossivel adicionar " & X & " - pilha cheia.")
         End If
         WriteLine()
     End Sub
@@ -70,12 +70,12 @@ Module Program
     End Sub
 
     Sub Mostrar()
-        If (Vazia()) Then
-            WriteLine("Impossivel apresentar - pilha vazia.")
-        Else
+        If (Not Vazia()) Then
             For I As Integer = TOPO - 1 To 0 Step -1
                 WriteLine("Posicao: {0,2} = {1}", I + 1, MATRIZ(I))
             Next
+        Else
+            WriteLine("Impossivel apresentar - pilha vazia.")
         End If
         WriteLine()
     End Sub

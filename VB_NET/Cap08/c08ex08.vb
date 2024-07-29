@@ -55,7 +55,7 @@ Module Program
         If (Adicionar(X)) Then
             WriteLine("Elemento " & X & " inserido na posicao " & INICIO)
         Else
-            WriteLine("Impossivel adicionar - fila lotada.")
+            WriteLine("Impossivel adicionar " & X & " - fila lotada.")
         End If
         WriteLine()
     End Sub
@@ -71,21 +71,21 @@ Module Program
     End Sub
 
     Sub Atual()
-        If (Vazia()) Then
-            WriteLine("Impossivel apresentar - fila vazia.")
-        Else
+        If (Not Vazia()) Then
             WriteLine(MATRIZ(0) & " - primeiro elemento da fila.")
+        Else
+            WriteLine("Impossivel apresentar - fila vazia.")
         End If
         WriteLine()
     End Sub
 
     Sub Exibicao()
-        If (Vazia()) Then
-            WriteLine("Impossivel apresentar - fila vazia.")
-        Else
+        If (Not Vazia()) Then
             For I As Integer = 0 To INICIO - 1
                 WriteLine("Posicao: {0,2} = {1}", I + 1, MATRIZ(I))
             Next
+        Else
+            WriteLine("Impossivel apresentar - fila vazia.")
         End If
         WriteLine()
     End Sub
