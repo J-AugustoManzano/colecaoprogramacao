@@ -69,11 +69,11 @@ public class Main {
     }
 
     public static void Mostrar() {
-      if (Vazia())
-          out.println("Impossivel apresentar - pilha vazia.");
-      else
+      if (!(Vazia()))
           for (int I = TOPO - 1; I >= 0; I--)
               out.printf("Posicao: %2d = %d%n", I + 1, MATRIZ[I]);
+      else
+          out.println("Impossivel apresentar - pilha vazia.");
       out.println();
     }
 
