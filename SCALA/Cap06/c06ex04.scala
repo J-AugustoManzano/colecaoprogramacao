@@ -1,4 +1,4 @@
-// c06ex04.class
+// c06ex04.scala
 
 import scala.collection.mutable.ArrayBuffer
 import scala.io.StdIn

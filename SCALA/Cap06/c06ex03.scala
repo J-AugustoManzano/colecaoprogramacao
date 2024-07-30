@@ -1,6 +1,6 @@
 // c06ex03.scala
 
-import scala.io.StdIn._
+import scala.io.StdIn
 
 case class Aluno(
   var Nome: String = "",
