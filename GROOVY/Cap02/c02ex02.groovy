@@ -1,0 +1,16 @@
+// c02ex02.groovy
+
+public class Main {
+    public static void main(String[] args) {
+        // Funções matemáticas
+        println(Math.cos(1));   // Saída: 0.54030230...
+        println(Math.exp(1));   // Saída: 2.71828182...
+        println(Math.log(2));   // Saída: 0.69314718...
+        println(Math.sin(1));   // Saída: 0.84147098...
+        println(Math.sqrt(2));  // Saída: 1.41421356...
+        
+        Scanner entrada = new Scanner(System.in)
+        print("\nTecle <Enter> para encerrar... ")
+        entrada.nextLine()
+    }
+}
