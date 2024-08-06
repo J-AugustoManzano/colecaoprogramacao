@@ -6,7 +6,7 @@ import static java.lang.System.out;
 public class Main {
     public static Scanner scanner = new Scanner(System.in);
   
-    public static void rotinaDeAdicao() {
+    public static void rotAdicao() {
         float a1, b1, r1;
         out.println();
         out.println("Rotina de Adicao");
@@ -23,7 +23,7 @@ public class Main {
         out.println();
     }
 
-    public static void rotinaDeSubtracao() {
+    public static void rotSubtracao() {
         float a2, b2, r2;
         out.println();
         out.println("Rotina de Subtracao");
@@ -40,7 +40,7 @@ public class Main {
         out.println();
     }
 
-    public static void rotinaDeMultiplicacao() {
+    public static void rotMultiplicacao() {
         float a3, b3, r3;
         out.println();
         out.println("Rotina de Multiplicacao");
@@ -57,7 +57,7 @@ public class Main {
         out.println();
     }
 
-    public static void rotinaDeDivisao() {
+    public static void rotDivisao() {
         float a4, b4, r4;
         out.println();
         out.println("Rotina de Divisao");
@@ -96,16 +96,16 @@ public class Main {
             if (opcao != 5) {
                 switch (opcao) {
                     case 1:
-                        rotinaDeAdicao();
+                        rotAdicao();
                         break;
                     case 2:
-                        rotinaDeSubtracao();
+                        rotSubtracao();
                         break;
                     case 3:
-                        rotinaDeMultiplicacao();
+                        rotMultiplicacao();
                         break;
                     case 4:
-                        rotinaDeDivisao();
+                        rotDivisao();
                         break;
                     default:
                         out.println();
