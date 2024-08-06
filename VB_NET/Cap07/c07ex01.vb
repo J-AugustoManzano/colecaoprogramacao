@@ -4,7 +4,7 @@ Imports System
 Imports System.Console
 
 Module Program
-    Sub RotinadeAdicao()
+    Sub RotAdicao()
         Dim a1 As Single, b1 As Single, r1 As Single
         WriteLine()
         WriteLine("Rotina de Adicao")
@@ -19,7 +19,7 @@ Module Program
         WriteLine()
     End Sub
 
-    Sub RotinadeSubtracao()
+    Sub RotSubtracao()
         Dim a2 As Single, b2 As Single, r2 As Single
         WriteLine()
         WriteLine("Rotina de Subtracao")
@@ -34,7 +34,7 @@ Module Program
         WriteLine()
     End Sub
 
-    Sub RotinaDeMultiplicacao()
+    Sub RotMultiplicacao()
         Dim a3 As Single, b3 As Single, r3 As Single
         WriteLine()
         WriteLine("Rotina de Multiplicacao")
@@ -49,7 +49,7 @@ Module Program
         WriteLine()
     End Sub
 
-    Sub RotinaDeDivisao()
+    Sub RotDivisao()
         Dim a4 As Single, b4 As Single, r4 As Single
         WriteLine()
         WriteLine("Rotina de Divisao")
@@ -85,13 +85,13 @@ Module Program
             If (opcao <> 5) Then
                 Select Case (opcao)
                     Case 1
-                        RotinadeAdicao()
+                        RotAdicao()
                     Case 2
-                        RotinadeSubtracao()
+                        RotSubtracao()
                     Case 3
-                        RotinaDeMultiplicacao()
+                        RotMultiplicacao()
                     Case 4
-                        RotinaDeDivisao()
+                        RotDivisao()
                     Case Else
                         WriteLine()
                         WriteLine("Opcao invalida - Tente novamente")
