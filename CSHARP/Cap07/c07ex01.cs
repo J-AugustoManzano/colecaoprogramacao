@@ -5,7 +5,7 @@ using static System.Console;
 
 class Program
 {
-    static void RotinadeAdicao()
+    static void RotAdicao()
     {
         float a1, b1, r1;
         WriteLine();
@@ -21,7 +21,7 @@ class Program
         WriteLine();
     }
 
-    static void RotinadeSubtracao()
+    static void RotSubtracao()
     {
         float a2, b2, r2;
         WriteLine();
@@ -37,7 +37,7 @@ class Program
         WriteLine();
     }
 
-    static void RotinaDeMultiplicacao()
+    static void RotMultiplicacao()
     {
         float a3, b3, r3;
         WriteLine();
@@ -53,7 +53,7 @@ class Program
         WriteLine();
     }
 
-    static void RotinaDeDivisao()
+    static void RotDivisao()
     {
         float a4, b4, r4;
         WriteLine();
@@ -95,16 +95,16 @@ class Program
                 switch (opcao)
                 {
                     case 1:
-                        RotinadeAdicao();
+                        RotAdicao();
                         break;
                     case 2:
-                        RotinadeSubtracao();
+                        RotSubtracao();
                         break;
                     case 3:
-                        RotinaDeMultiplicacao();
+                        RotMultiplicacao();
                         break;
                     case 4:
-                        RotinaDeDivisao();
+                        RotDivisao();
                         break;
                     default:
                         WriteLine();
