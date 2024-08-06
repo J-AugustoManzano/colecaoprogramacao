@@ -3,7 +3,7 @@
 class Main {
     static Scanner scanner = new Scanner(System.in)
 
-    static void rotinaDeAdicao() {
+    static void rotAdicao() {
         float a1, b1, r1
         println()
         println("Rotina de Adicao")
@@ -20,7 +20,7 @@ class Main {
         println()
     }
 
-    static void rotinaDeSubtracao() {
+    static void rotSubtracao() {
         float a2, b2, r2
         println()
         println("Rotina de Subtracao")
@@ -37,7 +37,7 @@ class Main {
         println()
     }
 
-    static void rotinaDeMultiplicacao() {
+    static void rotMultiplicacao() {
         float a3, b3, r3
         println()
         println("Rotina de Multiplicacao")
@@ -54,7 +54,7 @@ class Main {
         println()
     }
 
-    static void rotinaDeDivisao() {
+    static void rotDivisao() {
         float a4, b4, r4
         println()
         println("Rotina de Divisao")
@@ -93,16 +93,16 @@ class Main {
             if (opcao != 5) {
                 switch (opcao) {
                     case 1:
-                        rotinaDeAdicao()
+                        rotAdicao()
                         break
                     case 2:
-                        rotinaDeSubtracao()
+                        rotSubtracao()
                         break
                     case 3:
-                        rotinaDeMultiplicacao()
+                        rotMultiplicacao()
                         break
                     case 4:
-                        rotinaDeDivisao()
+                        rotDivisao()
                         break
                     default:
                         println()
