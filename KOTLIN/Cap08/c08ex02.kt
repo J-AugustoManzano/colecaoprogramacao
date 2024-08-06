@@ -12,7 +12,7 @@ fun main() {
     var numero: String
 
     while (true) {
-        print("Entre um valor numerico inteiro: ")
+        print("Entre um valor numerico: ")
         numero = readLine() ?: ""
         println()
 
