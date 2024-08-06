@@ -1,0 +1,26 @@
+// c08ex10.dart
+
+import 'dart:io';
+
+int FibonacciBase(int N, int X, int Y) {
+  if (N == 0) {
+    return X;
+  } else if (N == 1) {
+    return Y;
+  } else {
+    return FibonacciBase(N - 1, Y, X + Y);
+  }
+}
+
+int Fibonacci(int N) {
+  return FibonacciBase(N, 0, 1);
+}
+
+void main() {
+  for (int I = 0; I <= 14; I++) {
+    print("$I - ${Fibonacci(I)}");
+  }
+
+  stdout.write("\nTecle <Enter> para sair... ");
+  stdin.readLineSync();
+}

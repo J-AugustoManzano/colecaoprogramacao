@@ -1,0 +1,25 @@
+// c08ex09.dart
+
+import 'dart:io';import 'dart:io';
+
+int Fibonacci(int N) {
+  if (N == 0) {
+    return 0;
+  }
+  if (N == 1) {
+    return 1;
+  }
+  if (N >= 2) {
+    return Fibonacci(N - 1) + Fibonacci(N - 2);
+  }
+  return 0; // Para evitar aviso de retorno implícito
+}
+
+void main() {
+  for (int I = 0; I <= 14; I++) {
+    print("$I - ${Fibonacci(I)}");
+  }
+
+  stdout.write("\nTecle <Enter> para sair... ");
+  stdin.readLineSync();
+}
