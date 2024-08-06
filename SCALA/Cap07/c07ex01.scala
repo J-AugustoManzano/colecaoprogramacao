@@ -1,7 +1,7 @@
 // c07ex01.scala
 
 object Main {
-  def rotinaDeAdicao(): Unit = {
+  def rotAdicao(): Unit = {
     println()
     println("Rotina de Adicao")
     println()
@@ -15,7 +15,7 @@ object Main {
     println()
   }
 
-  def rotinaDeSubtracao(): Unit = {
+  def rotSubtracao(): Unit = {
     println()
     println("Rotina de Subtracao")
     println()
@@ -29,7 +29,7 @@ object Main {
     println()
   }
 
-  def rotinaDeMultiplicacao(): Unit = {
+  def rotMultiplicacao(): Unit = {
     println()
     println("Rotina de Multiplicacao")
     println()
@@ -43,7 +43,7 @@ object Main {
     println()
   }
 
-  def rotinaDeDivisao(): Unit = {
+  def rotDivisao(): Unit = {
     println()
     println("Rotina de Divisao")
     println()
@@ -77,10 +77,10 @@ object Main {
 
       if (opcao != 5) {
         opcao match {
-          case 1 => rotinaDeAdicao()
-          case 2 => rotinaDeSubtracao()
-          case 3 => rotinaDeMultiplicacao()
-          case 4 => rotinaDeDivisao()
+          case 1 => rotAdicao()
+          case 2 => rotSubtracao()
+          case 3 => rotMultiplicacao()
+          case 4 => rotDivisao()
           case _ =>
             println()
             println("Opcao invarida - Tente novamente")
