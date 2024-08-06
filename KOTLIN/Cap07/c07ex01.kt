@@ -61,8 +61,8 @@ fun rotDivisao() {
 }
 
 fun main() {
-    var option = 0
-    while (option != 5) {
+    var opcao = 0
+    while (opcao != 5) {
         println("CALCULADORA - V1")
         println()
         println("[1] - Adicao")
@@ -72,10 +72,10 @@ fun main() {
         println("[5] - Fim de Programa")
         println()
         print("Escolha uma opcao: ")
-        option = readln().toInt()
+        opcao = readln().toInt()
 
-        if (option != 5) {
-            when (option) {
+        if (opcao != 5) {
+            when (opcao) {
                 1 -> rotAdicao()
                 2 -> rotSubtracao()
                 3 -> rotMultiplicacao()
