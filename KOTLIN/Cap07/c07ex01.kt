@@ -1,6 +1,6 @@
 // c07ex01.kt
 
-fun rotinaDeAdicao() {
+fun rotAdicao() {
     println()
     println("Rotina de Adicao")
     println()
@@ -14,7 +14,7 @@ fun rotinaDeAdicao() {
     println()
 }
 
-fun rotinaDeSubtracao() {
+fun rotSubtracao() {
     println()
     println("Rotina de Subtracao")
     println()
@@ -28,7 +28,7 @@ fun rotinaDeSubtracao() {
     println()
 }
 
-fun rotinaDeMultiplicacao() {
+fun rotMultiplicacao() {
     println()
     println("Rotina de Multiplicacao")
     println()
@@ -42,7 +42,7 @@ fun rotinaDeMultiplicacao() {
     println()
 }
 
-fun rotinaDeDivisao() {
+fun rotDivisao() {
     println()
     println("Rotina de Divisao")
     println()
@@ -76,10 +76,10 @@ fun main() {
 
         if (option != 5) {
             when (option) {
-                1 -> rotinaDeAdicao()
-                2 -> rotinaDeSubtracao()
-                3 -> rotinaDeMultiplicacao()
-                4 -> rotinaDeDivisao()
+                1 -> rotAdicao()
+                2 -> rotSubtracao()
+                3 -> rotMultiplicacao()
+                4 -> rotDivisao()
                 else -> {
                     println()
                     println("Opcao invalida - Tente novamente")
