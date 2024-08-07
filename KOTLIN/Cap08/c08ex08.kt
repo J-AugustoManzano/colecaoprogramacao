@@ -89,8 +89,8 @@ fun Criar() {
 
 fun main() {
     Criar()
-    var OPCAO: Int
-    do {
+    var OPCAO: Int = 0
+    while (OPCAO != 6) {
         println("PROGRAMA: FILA\n")
         println("[1] - Entrada")
         println("[2] - Saida")
@@ -111,5 +111,5 @@ fun main() {
                 else -> println("Opcao invalida. Tente novamente.\n")
             }
         }
-    } while (OPCAO != 6)
+    }
 }
