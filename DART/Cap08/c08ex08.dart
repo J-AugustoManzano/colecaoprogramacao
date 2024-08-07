@@ -90,8 +90,8 @@ void Criar() {
 
 void main() {
   Criar();
-  int OPCAO;
-  do {
+  int OPCAO = 0;
+  while (OPCAO != 6) {
     print("PROGRAMA: FILA\n");
     print("[1] - Entrada");
     print("[2] - Saida");
@@ -112,5 +112,5 @@ void main() {
         default: print("Opcao invalida. Tente novamente.\n");
       }
     }
-  } while (OPCAO != 6);
+  }
 }
