@@ -80,8 +80,8 @@ void Criar() {
 
 void main() {
   Criar();
-  int Opcao;
-  do {
+  int Opcao = 0;
+  while (Opcao != 5) {
     print("PROGRAMA: PILHA\n");
     print("[1] - Empilhar");
     print("[2] - Desempilhar");
@@ -100,5 +100,5 @@ void main() {
         default: print("Opcao invalida. Tente novamente.\n");
       }
     }
-  } while (Opcao != 5);
+  }
 }
