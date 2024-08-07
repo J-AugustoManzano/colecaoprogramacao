@@ -79,8 +79,8 @@ fun Criar() {
 
 fun main() {
     Criar()
-    var Opcao: Int
-    do {
+    var Opcao: Int = 0
+    while (Opcao != 5) {
         println("PROGRAMA: PILHA\n")
         println("[1] - Empilhar")
         println("[2] - Desempilhar")
@@ -99,5 +99,5 @@ fun main() {
                 else -> println("Opcao invalida. Tente novamente.\n")
             }
         }
-    } while (Opcao != 5)
+    }
 }
