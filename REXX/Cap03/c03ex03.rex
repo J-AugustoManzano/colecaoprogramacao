@@ -7,7 +7,7 @@ pull R
 
 A = RxCalcPi() * R ** 2
 
-say "Resultado = " A
+say "Resultado = " format(A, , 2)
 
 say
 call charout, "Tecle <Enter> para encerrar... "
