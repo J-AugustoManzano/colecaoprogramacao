@@ -20,5 +20,4 @@ BEGIN {
   print ""
   printf "Tecle <Enter> para encerrar... "
   getline < "-"
-
 }
