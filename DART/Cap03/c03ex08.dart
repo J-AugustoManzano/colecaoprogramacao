@@ -1,4 +1,4 @@
-// c03ex08.kt
+// c03ex08.dart
 
 /*
  Programa exemplo para operações de duas entradas
@@ -6,26 +6,26 @@
 */
 
 fun main() {
-    var A: Int
-    var B: Int
-    var X: Int
+  var A: Int
+  var B: Int
+  var X: Int
     
-    // Entrada de dados
+  // Entrada de dados
 
-    print("Entre o 1o. valor numerico inteiro: ")
-    A = readLine()?.toInt() ?: 0
+  print("Entre o 1o. valor numerico inteiro: ")
+  A = readLine()?.toInt() ?: 0
 
-    print("Entre o 2o. valor numerico inteiro: ")
-    B = readLine()?.toInt() ?: 0
+  print("Entre o 2o. valor numerico inteiro: ")
+  B = readLine()?.toInt() ?: 0
     
-    // Processamento de dados
+  // Processamento de dados
 
-    X = A + B // Cálculo da adição
+  X = A + B // Cálculo da adição
     
-    // Saída de dados
+  // Saída de dados
 
-    println("Resultado = $X")
+  println("Resultado = $X")
 
-    print("\nTecle <Enter> para encerrar... ")
-    readLine()
+  print("\nTecle <Enter> para encerrar... ")
+  readLine()
 }    
