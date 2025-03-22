@@ -1,24 +1,27 @@
 // c07ex07.go
 
 package main
+
 import "fmt"
 
-func fatorial(N int) int {
-  var FAT, I int	
-  FAT = 1
-  for I = 1; I <= N; I++ {
-    FAT *= I
-  }
-  return FAT
+func Igual(A, B int) bool {
+  return A == B
 }
 
 func main() {
-  var LIMITE int
+  var X, Y int
 
-  fmt.Print("Qual fatorial: ")
-  fmt.Scan(&LIMITE)
+  fmt.Print("Informe o 1o. valor: ")
+  fmt.Scan(&X)
 
-  fmt.Printf("Fatorial = %d\n", fatorial(LIMITE))
+  fmt.Print("Informe o 2o. valor: ")
+  fmt.Scan(&Y)
+
+  if Igual(X, Y) {
+    fmt.Println("Valores sao iguais")
+  } else {
+    fmt.Println("Valores sao diferentes")
+  }
 
   fmt.Println()
   fmt.Print("Tecle <Enter> para encerrar... ")
