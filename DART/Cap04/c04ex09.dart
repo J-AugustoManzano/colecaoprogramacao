@@ -17,7 +17,7 @@ void main() {
   stdout.write("Prova 2: ");
   prova2 = int.tryParse(stdin.readLineSync() ?? '') ?? 0;
 
-  if (prova1 == 1 && prova2 != 1 || prova1 != 1 && prova2 == 1) {
+  if ((prova1 == 1 && !(prova2 == 1)) || (!(prova1 == 1) && prova2 == 1)) {
     print("Atleta participa da terceira prova.");
   } else {
     print("Atleta nao participa da terceira prova.");
