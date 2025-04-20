@@ -17,7 +17,7 @@ set P2 [gets stdin]
 
 puts ""
 
-if expr {(( $P1 == 1 && !($P2 == 1) ) || (!($P1 == 1) && $P2 == 1))} {
+if {[expr {($P1 == 1 && !($P2 == 1)) || (!($P1 == 1) && $P2 == 1)}]} {
   puts "Atleta participa da terceira prova."
 } else {
   puts "Atleta nao participa da terceira prova."
