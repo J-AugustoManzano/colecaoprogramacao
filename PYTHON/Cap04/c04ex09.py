@@ -10,7 +10,7 @@ print()
 p1 = input("Prova 1: ")
 p2 = input("Prova 2: ")
 
-if ((p1 == 1 and not (p2 == 1)) or (not (p1 == 1) and p2 == 1)):
+if ((p1 == "1" and not (p2 == "1")) or (not (p1 == "1") and p2 == "1")):
   print("Atleta participa da terceira prova.")
 else:
   print("Atleta nao participa da terceira prova.")
