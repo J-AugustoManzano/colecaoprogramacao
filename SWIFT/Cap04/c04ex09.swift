@@ -34,5 +34,5 @@ if ((P1 == 1 && !(P2 == 1)) || (!(P1 == 1) && P2 == 1)) {
     }
 }
 
-print("\n\NTecle <Enter> para encerrar... ", terminator: "")
+print("\n\nTecle <Enter> para encerrar... ", terminator: "")
 _ = readLine()
