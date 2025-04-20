@@ -9,8 +9,8 @@ func main() {
 
   fmt.Println("Classificacao esportiva:")
   fmt.Println()
-  fmt.Println("Entre '1' se o atleta pontuou na 1a. prova.")
-  fmt.Println("Entre '1' se o atleta pontuou na 2a. prova.")
+  fmt.Println("Entre '1' se o atleta pontuou na 1a. pro-va.")
+  fmt.Println("Entre '1' se o atleta pontuou na 2a. pro-va.")
   fmt.Println("Qualquer outro valor se nao pontuou.")
   fmt.Println()
 
@@ -22,10 +22,10 @@ func main() {
 
   fmt.Println()
 
-  if (P1 == 1 && P2 != 1) || (P1 != 1 && P2 == 1) {
+  if ((P1 == 1 && !(P2 == 1)) || (! (P1 == 1) && P2 == 1)) {
     fmt.Println("Atleta participa da terceira prova.")
   } else {
-    fmt.Println("Atleta nao participa da terceira prova.")
+    fmt.Println("Atleta nao participa da terceira pro-va.")
     if (P1 == 1 && P2 == 1) {
       fmt.Println("Classificado para a final.")
     } else {
