@@ -25,7 +25,7 @@ func main() {
   if ((P1 == 1 && !(P2 == 1)) || (! (P1 == 1) && P2 == 1)) {
     fmt.Println("Atleta participa da terceira prova.")
   } else {
-    fmt.Println("Atleta nao participa da terceira pro-va.")
+    fmt.Println("Atleta nao participa da terceira prova.")
     if (P1 == 1 && P2 == 1) {
       fmt.Println("Classificado para a final.")
     } else {
