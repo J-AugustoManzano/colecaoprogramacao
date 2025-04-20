@@ -23,7 +23,7 @@ if let inputP2 = readLine(), let parsedP2 = Int(inputP2) {
     fatalError("Entrada invalida.")
 }
 
-if (P1 == 1 && P2 != 1) || (P1 != 1 && P2 == 1) {
+if ((P1 == 1 && !(P2 == 1)) || (!(P1 == 1) && P2 == 1)) {
     print("Atleta participa da terceira prova.\n")
 } else {
     print("Atleta nao participa da terceira prova.")
