@@ -13,7 +13,7 @@ p1 = io.read()
 io.write("Prova 2: ")
 p2 = io.read()
 
-if (p1 == "1" and p2 ~= "1") or (p1 ~= "1" and p2 == "1") then
+if ((p1 == "1" and not (p2 == "1")) or (not (p1 == "1") and p2 == "1")) then
   print("Atleta participa da terceira prova.")
 else
   print("Atleta nao participa da terceira prova.")
