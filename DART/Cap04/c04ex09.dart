@@ -3,8 +3,8 @@
 import 'dart:io';
 
 void main() {
-  int prova1;
-  int prova2;
+  int p1;
+  int p2;
 
   print("Classificacao esportiva\n");
   print("Entre '1' se atleta pontuou na 1a prova");
@@ -12,16 +12,16 @@ void main() {
   print("Qualquer outro valor se nao pontuou nas provas\n");
 
   stdout.write("Prova 1: ");
-  prova1 = int.tryParse(stdin.readLineSync() ?? '') ?? 0;
+  p1 = int.tryParse(stdin.readLineSync() ?? '') ?? 0;
 
   stdout.write("Prova 2: ");
-  prova2 = int.tryParse(stdin.readLineSync() ?? '') ?? 0;
+  p2 = int.tryParse(stdin.readLineSync() ?? '') ?? 0;
 
-  if ((prova1 == 1 && !(prova2 == 1)) || (!(prova1 == 1) && prova2 == 1)) {
+  if ((p1 == 1 && !(p2 == 1)) || (!(p1 == 1) && p2 == 1)) {
     print("Atleta participa da terceira prova.");
   } else {
     print("Atleta nao participa da terceira prova.");
-    if (prova1 == 1 && prova2 == 1) {
+    if (p1 == 1 && p2 == 1) {
       print("Classificado para a final.");
     } else {
       print("Desclassificado da competicao.");
@@ -31,3 +31,4 @@ void main() {
   stdout.write("\nPressione <Enter> para encerrar... ");
   stdin.readLineSync();
 }
+    
