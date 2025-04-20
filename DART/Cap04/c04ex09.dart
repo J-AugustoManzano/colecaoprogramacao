@@ -28,7 +28,7 @@ void main() {
     }
   }
 
-  stdout.write("\nPressione <Enter> para encerrar... ");
+  stdout.write("\n\nPressione <Enter> para encerrar... ");
   stdin.readLineSync();
 }
     
