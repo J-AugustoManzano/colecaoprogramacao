@@ -1,42 +1,42 @@
 -- c06ex03.lua
 
 print("Escola de Computacao XPTO")
-print("Cadastro Escolar de TAluno")
+print("Cadastro Escolar de Aluno")
 print()
 
 alunos = {}
 
 for i = 1, 8 do
-  print("TAluno: " .. i)
+  print("Aluno: " .. i)
   print()
 
-  TAluno = {}
+  Aluno = {}
 
   io.write("Nome ..............: ")
-  TAluno.NOME = io.read("*l")
+  Aluno.Nome = io.read("*l")
 
   io.write("Turma .............: ")
-  TAluno.TURMA = io.read("*l")
+  Aluno.Turma = io.read("*l")
 
   io.write("Sala ..............: ")
-  TAluno.SALA = tonumber(io.read("*l"))
+  Aluno.Sala = tonumber(io.read("*l"))
 
   print()
-  TAluno.NOTAS = {}
+  Aluno.Notas = {}
   for j = 1, 4 do
     io.write("Entre a " .. j .. "a. nota ..: ")
-    table.insert(TAluno.NOTAS, tonumber(io.read("*l")))
+    Aluno.Notas[j] = tonumber(io.read("*l"))
   end
 
   print()
-  table.insert(alunos, TAluno)
+  table.insert(alunos, Aluno)
 end
 
 print("Escola de Computacao XPTO")
-print("Cadastro Escolar de TAluno")
+print("Cadastro Escolar de Aluno")
 print()
 print("DADOS DOS ALUNOS")
-io.write("TAluno ")
+io.write("Aluno ")
 io.write("Nome                           ")
 io.write("Sala ")
 io.write("Turma ")
@@ -52,16 +52,15 @@ io.write("----- ")
 io.write("----- ")
 io.write("----- ")
 io.write("----- ")
-io.write("----- ")
 print()
 
 for i = 1, 8 do
   io.write(string.format("%5d ", i))
-  io.write(string.format("%-30s ", alunos[i].NOME))
-  io.write(string.format("%4d ", alunos[i].SALA))
-  io.write(string.format("%5s ", alunos[i].TURMA))
+  io.write(string.format("%-30s ", alunos[i].Nome))
+  io.write(string.format("%4d ", alunos[i].Sala))
+  io.write(string.format("%5s ", alunos[i].Turma))
   for j = 1, 4 do
-    io.write(string.format("%5.1f ", alunos[i].NOTAS[j]))
+    io.write(string.format("%5.1f ", alunos[i].Notas[j]))
   end
   print()
 end
