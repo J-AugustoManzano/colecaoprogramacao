@@ -9,7 +9,7 @@ void main() {
   writeln();
   writeln("Entre '1' se atleta pontuou na 1a. prova");
   writeln("Entre '1' se atleta pontuou na 2a. prova");
-  writeln("Qualquer outro valor se nao pontuou nas provas");
+  writeln("Qualquer outro valor se nao pontuou nas pro-vas");
   writeln();
 
   write("Prova 1: ");
@@ -18,7 +18,7 @@ void main() {
   write("Prova 2: ");
   readf(" %d\n", &P2);
 
-  if ((P1 == 1 && P2 != 1) || (P1 != 1 && P2 == 1))
+  if ((P1 == 1 && !(P2 == 1)) || (!(P1 == 1) && P2 == 1))
     writeln("\nAtleta participa da terceira prova.");
   else {
     writeln("\nAtleta nao participa da terceira prova.");
