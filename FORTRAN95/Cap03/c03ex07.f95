@@ -1,4 +1,4 @@
-! c03ex07.f95
+! c03ex07f95
 
 PROGRAM c02ex07
   IMPLICIT NONE
@@ -8,12 +8,13 @@ PROGRAM c02ex07
   INTEGER :: i, pos
 
   frase = "Aprendendo Fortran com o Professor Manzano"
+  pos = INDEX(frase, "Fortran")
 
   WRITE(*,'(A,A)') 'Frase ......: ', frase
   WRITE(*,'(A)')   '             -------------------------------------------'
   WRITE(*,'(A)')   '             0000000001111111111222222222233333333333444'
   WRITE(*,'(A)')   '             0123456789012345678901234567890123456789012'
-  WRITE(*,*)
+  WRITE(*,*)  
 
   WRITE(*,'(A,I0,A)') 'Tamanho ....: ', LEN(frase), ' caracteres'
   WRITE(*,*)
@@ -32,8 +33,7 @@ PROGRAM c02ex07
   WRITE(*,'(A,A)') 'Letra 4 da Palavra 1 ...: ', palavras(1)(4:4)
   WRITE(*,*)
 
-  pos = INDEX(frase, 'PHP')
-  WRITE(*,'(A,I0)') 'A palavra ''PHP'' na posicao: ', pos
+  WRITE(*,'(A,I0)') 'A palavra ''Fortran'' na posicao: ', pos
 
   WRITE(*,*)
   WRITE(*,'(A,$)') 'Tecle <Enter> para encerrar... '
@@ -41,15 +41,15 @@ PROGRAM c02ex07
 
 CONTAINS
 
-  SUBROUTINE split(texto, tamanho, palavra)
-    CHARACTER(len=*), INTENT(IN) :: texto, tamanho
+  SUBROUTINE split(texto, separador, palavra)
+    CHARACTER(len=*), INTENT(IN) :: texto, separador
     CHARACTER(len=*), DIMENSION(:), INTENT(OUT) :: palavra
     INTEGER :: i, pos, n
 
     n = 1
     pos = 1
-    DO i = 1, LEN(texto)
-      IF (texto(i:i) == tamanho) THEN
+    DO i = 1, LEN_TRIM(texto)
+      IF (texto(i:i) == separador) THEN
         palavra(n) = TRIM(ADJUSTL(texto(pos:i-1)))
         n = n + 1
         pos = i + 1
