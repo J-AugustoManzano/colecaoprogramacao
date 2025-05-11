@@ -1,22 +1,23 @@
-/* c07ex05.rex */
+/* c07ex05.rexx */
 
-call charout, "Qual fatorial: "
-pull Limite
+call charout , "Qual fatorial: "
+pull limite
 
-Resp = FATORIAL(Limite)
+resp.1 = 1
 
-say "Fatorial = " || RESP
+call fatorial limite, 'resp'
 
-say
-call charout, "Tecle <Enter> para encerrar... "
+say "Fatorial = " resp.1
+say 	
+call charout , "Tecle <Enter> para encerrar... "
 pull
 
 exit
 
-FATORIAL: procedure
-  arg N
-  FAT = 1
-  do I = 1 to N
-    FAT = FAT * I
+fatorial:
+  parse arg n, fat
+  do i = 1 to n
+    interpret fat".1 = "fat".1 * "i
   end
-return FAT
+return
+  
