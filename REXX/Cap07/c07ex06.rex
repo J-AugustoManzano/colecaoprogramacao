@@ -1,26 +1,22 @@
 /* c07ex06.rex */
 
-call charout, "Informe o 1o. valor: "
-pull X
+call charout, "Qual fatorial: "
+pull Limite
 
-call charout, "Informe o 2o. valor: "
-pull Y
+Resp = FATORIAL(Limite)
 
-if (IGUAL(X, Y) == '.V.') then
-  say "Valores sao iguais"
-else
-  say "Valores sao diferentes"
-   
+say "Fatorial = " || RESP
+
 say
 call charout, "Tecle <Enter> para encerrar... "
 pull
 
-exit  
+exit
 
-IGUAL: procedure
-  arg A, B
-  if (A == B) then
-    RESULT = '.V.'
-  else
-    RESULT = '.F.'
-return RESULT
+FATORIAL:
+  arg N
+  FAT = 1
+  do I = 1 to N
+    FAT = FAT * I
+  end
+return FAT
