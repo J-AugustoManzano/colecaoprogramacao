@@ -12,12 +12,8 @@ pull
 exit
 
 FATORIAL: procedure
-  arg N
-  return FATORIAL_BASE(N, 1)
-
-FATORIAL_BASE: procedure
-  arg N, P
+arg N
   if (N == 0) then
-    return P
+    return 1
   else
-    return FATORIAL_BASE(N - 1, N * P)
+    return N * FATORIAL(N - 1)
