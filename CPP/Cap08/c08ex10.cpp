@@ -4,13 +4,14 @@
 using namespace std;
 
 int FibonacciBase(int N, int X, int Y) {
-  if (N == 0) {
+  if (N == 0)
     return X;
-  } else if (N == 1) {
+  if (N == 1)
     return Y;
-  } else {
-    return FibonacciBase(N - 1, Y, X + Y);
-  }
+  if (N == 2)
+    return X + Y;
+  if (N >= 2)
+      return FibonacciBase(N - 1, Y, X + Y);
   return 0;
 }
 
