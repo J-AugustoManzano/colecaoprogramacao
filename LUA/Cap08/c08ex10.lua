@@ -3,9 +3,11 @@
 function fibonacci_base(n, x, y)
   if (n == 0) then
     return x
-  elseif (n == 1) then
+  end
+  if (n == 1) then
     return y
-  else
+  end
+  if (n >= 2) then
     return fibonacci_base(n - 1, y, x + y)
   end
 end
