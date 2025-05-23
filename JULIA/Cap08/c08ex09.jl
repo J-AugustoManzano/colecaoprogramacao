@@ -5,9 +5,11 @@ using Printf
 function fibonacci(n)::Int64
   if (n == 0)
     return 0
-  elseif (n == 1)
+  end
+  if (n == 1)
     return 1
-  else
+  end
+  if (n >= 2)
     return fibonacci(n - 1) + fibonacci(n - 2)
   end
 end
