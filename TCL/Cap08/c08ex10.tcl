@@ -3,11 +3,14 @@
 proc FibonacciBase {N X Y} {
   if {$N == 0} {
     return $X
-  } elseif {$N == 1} {
+  } 
+  if {$N == 1} {
     return $Y
-  } else {
+  } 
+  if {$N >= 2} {
     return [FibonacciBase [expr {$N - 1}] $Y [expr {$X + $Y}]]
   }
+  return 0;
 }
 
 proc Fibonacci {N} {
