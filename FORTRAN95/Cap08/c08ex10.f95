@@ -10,7 +10,7 @@ PROGRAM c08ex10
   END DO
 
   WRITE (*,*)
-  WRITE (*, '(A,$)') 'Tecle <Enter> para encerrar... '
+  WRITE (*, '(A)') 'Tecle <Enter> para encerrar... '
   READ(*,*)
 
 CONTAINS
@@ -21,9 +21,11 @@ CONTAINS
 
     IF (N == 0) THEN
       Fib = X
-    ELSE IF (N == 1) THEN
+    END IF
+    IF (N == 1) THEN
       Fib = Y
-    ELSE
+    END IF
+    IF (N >= 2) THEN
       Fib = FibonacciBase(N - 1, Y, X + Y)
     END IF
   END FUNCTION FibonacciBase
