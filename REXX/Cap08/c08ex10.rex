@@ -14,7 +14,7 @@ fibonacciBase: procedure
   arg N, X, Y
   if (N == 0) then return X
   if (N == 1) then return Y
-  return fibonacciBase(N - 1, Y, X + Y)
+  if (N >= 2) then return fibonacciBase(N - 1, Y, X + Y)
 
 FIBONACCI: procedure
   arg N
