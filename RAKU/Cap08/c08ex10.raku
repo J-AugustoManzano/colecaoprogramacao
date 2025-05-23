@@ -1,13 +1,15 @@
 # c08ex10.raku
 
-sub fibonacciBase ($N, $X, $Y) {
+sub fibonacciBase($N, $X, $Y) {
   if ($N == 0) {
     return $X;
   }
   if ($N == 1) {
     return $Y;
   }
-  return fibonacciBase($N - 1, $Y, $X + $Y);
+  if ($N >= 2) {
+    return fibonacciBase($N - 1, $Y, $X + $Y);
+  }
 }
 
 sub FIBONACCI ($N) {
