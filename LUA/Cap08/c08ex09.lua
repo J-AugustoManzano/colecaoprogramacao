@@ -3,9 +3,11 @@
 function fibonacci(n)
   if (n == 0) then
     return 0
-  elseif (n == 1) then
+  end
+  if (n == 1) then
     return 1
-  else
+  end
+  if (n >= 2) then
     return fibonacci(n - 1) + fibonacci(n - 2)
   end
 end
