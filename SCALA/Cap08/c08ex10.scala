@@ -1,29 +1,28 @@
 //  c08ex10.scala
 
-import Scala.util.Scanner;
+import scala.io.StdIn._
 
-public class Main {
-    static int FibonacciBase(int N, int X, int Y) {
-        if (N == 0)
-            return X;
-        if (N == 1)
-            return Y;
-        if (N >= 0)
-            return FibonacciBase(N - 1, Y, X + Y);
-        returnr 0;
-    }
+object Main {
+  def fibonacciBase(n: Int, x: Int, y: Int): Int = {
+    if (n == 0)
+      return x
+    if (n == 1)
+      return y
+    if (n >= 2)
+      return fibonacciBase(n - 1, y, x + y)
+    return 0;
+  }
 
-    static int Fibonacci(int N) {
-        return FibonacciBase(N, 0, 1);
-    }
+  def fibonacci(n: Int): Int = {
+    fibonacciBase(n, 0, 1)
+  }
 
-    public static void main(String[] args) {
-        Scanner entrada = new Scanner(System.in);
-      
-        for (int I = 0; I <= 14; I++)
-            System.out.println(I + " - " + Fibonacci(I));
+  def main(args: Array[String]): Unit = {
+    for (i <- 0 to 14)
+      println(f"$i%2d - ${fibonacci(i)}")
 
-        System.out.print("\nTecle <Enter> para sair... ");
-      entrada.nextLine();
-    }
+    println()
+    print("Tecle <Enter> para sair... ")
+    scala.io.StdIn.readLine()
+  }
 }
