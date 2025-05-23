@@ -3,9 +3,9 @@
 def fibonacci_base(n, x, y):
   if (n == 0):
     return x
-  elif (n == 1):
+  if (n == 1):
     return y
-  else:
+  if (N >= 2):
     return fibonacci_base(n - 1, y, x + y)
 
 def fibonacci(n):
