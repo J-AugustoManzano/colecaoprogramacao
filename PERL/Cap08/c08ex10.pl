@@ -13,8 +13,8 @@ sub fibonacciBase {
   if ($N == 1) {
     return $Y;
   }
-    if ($N >= 2) {
-      return fibonacciBase($N - 1, $Y, $X + $Y);
+  if ($N >= 2) {
+    return fibonacciBase($N - 1, $Y, $X + $Y);
   }
 }
 
