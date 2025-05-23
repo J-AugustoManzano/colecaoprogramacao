@@ -4,9 +4,11 @@
 function FibonacciBase($N, $X, $Y): int {
   if ($N == 0) {
     return $X;
-  } else if ($N == 1) {
+} 
+  if ($N == 1) {
     return $Y;
-  } else {
+} 
+  If ($N >= 2) {
     return FibonacciBase($N - 1, $Y, $X + $Y);
   }
 }
