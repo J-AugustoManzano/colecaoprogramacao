@@ -2,14 +2,17 @@
 
 import std.stdio;
 
-int FibonacciBase(int N, int X, int Y) {
-  if (N == 0) {
+int FibonacciBase(int N, int X, int Y)
+{
+  if (N == 0)
     return X;
-  } else if (N == 1) {
+  if (N == 1)
     return Y;
-  } else {
+  if (N == 2)
+    return X + Y;
+  if (N >= 2)
     return FibonacciBase(N - 1, Y, X + Y);
-  }
+  return 0;
 }
 
 int Fibonacci(int N) {
