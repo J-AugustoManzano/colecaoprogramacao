@@ -3,11 +3,10 @@ program c08ex10;
 function FibonacciBase(N, X, Y: Integer): Integer;
 begin
   if (N = 0) then
-    FibonacciBase := X
-  else 
-    if (N = 1) then
-      FibonacciBase := Y
-    else
+    FibonacciBase := X;
+  if (N = 1) then
+    FibonacciBase := Y;
+  if (N >= 0) then
       FibonacciBase := FibonacciBase(N - 1, Y, X + Y);
 end;
 
