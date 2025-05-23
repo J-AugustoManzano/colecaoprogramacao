@@ -7,7 +7,7 @@ begin
   if (N = 1) then
     FibonacciBase := Y;
   if (N >= 0) then
-      FibonacciBase := FibonacciBase(N - 1, Y, X + Y);
+    FibonacciBase := FibonacciBase(N - 1, Y, X + Y);
 end;
 
 function Fibonacci(N: Integer): Integer;
