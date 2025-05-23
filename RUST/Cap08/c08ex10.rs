@@ -5,11 +5,14 @@ use std::io::{self, Write};
 fn fibonacci_base(n: usize, x: u64, y: u64) -> u64 {
   if n == 0 {
     return x
-  } else if n == 1 {
+  } 
+  if n == 1 {
     return y
-  } else {
+  } 
+  if n >= 2 {
     return fibonacci_base(n - 1, y, x + y)
   }
+  unreachable!()
 }
 
 fn fibonacci(n: usize) -> u64 {
