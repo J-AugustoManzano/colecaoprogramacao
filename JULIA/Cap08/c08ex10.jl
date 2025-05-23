@@ -5,9 +5,11 @@ using Printf
 function fibonacci_base(n, x, y)::Int64
   if (n == 0)
     return x
-  elseif (n == 1)
+  end
+  if (n == 1)
     return y
-  else
+  end
+  if (n >= 2)
     return fibonacci_base(n - 1, y, x + y)
   end
 end
