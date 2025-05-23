@@ -8,11 +8,14 @@ Module Program
         ByVal Y As Integer) As Integer
         If (N = 0) Then
             Return X
-        ElseIf (N = 1) Then
+        End If
+        If (N = 1) Then
             Return Y
-        Else
+        End If
+        If (N >= 2) Then
             Return FibonacciBase(N - 1, Y, X + Y)
         End If
+        Return 0
     End Function
 
     Function Fibonacci(ByVal N As Integer) As Integer
