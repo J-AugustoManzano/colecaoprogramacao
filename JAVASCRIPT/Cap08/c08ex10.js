@@ -5,9 +5,11 @@ const rls = require('readline-sync');
 function FibonacciBase(N, X, Y) {
   if (N == 0) {
     return X;
-  } else if (N == 1) {
+  } 
+  if (N == 1) {
     return Y;
-  } else {
+  } 
+  if (N >= 2) {
     return FibonacciBase(N - 1, Y, X + Y);
   }
 }
