@@ -3,11 +3,14 @@
 fun FibonacciBase(N: Int, X: Int, Y: Int): Int {
     if (N == 0) {
         return X
-    } else if (N == 1) {
+    } 
+    if (N == 1) {
         return Y
-    } else {
+    } 
+    if (N >= 2) {
         return FibonacciBase(N - 1, Y, X + Y)
     }
+    return 0;
 }
 
 fun Fibonacci(N: Int): Int {
