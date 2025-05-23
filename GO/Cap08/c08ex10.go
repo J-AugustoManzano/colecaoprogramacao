@@ -4,14 +4,20 @@ package main
 
 import "fmt"
 
-func FibonacciBase(N, X, Y int) int {
-  if (N == 0) {
+func FibonacciBase(N int, X int, Y int) int {
+  if N == 0 {
     return X
-  } else if (N == 1) {
-    return Y
-  } else {
-    return FibonacciBase(N - 1, Y, X + Y)
   }
+  if N == 1 {
+    return Y
+  }
+  if N == 2 {
+    return X + Y
+  }
+  if N >= 2 {
+    return FibonacciBase(N-1, Y, X+Y)
+  }
+  return 0
 }
 
 func Fibonacci(N int) int {
