@@ -20,7 +20,12 @@ function fibonacciBase(N, X, Y) {
   if (N == 1) {
     return Y
   }
-  return fibonacciBase(N - 1, Y, X + Y)
+  if (N == 2) {
+    return X + Y
+  }
+  if (N >= 2) {
+    return fibonacciBase(N - 1, Y, X + Y)
+  }
 }
 
 function FIBONACCI(N) {
