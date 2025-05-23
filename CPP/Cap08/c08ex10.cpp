@@ -1,6 +1,7 @@
 // c08ex10.cpp
 
 #include <iostream>
+#include <iomanip>
 using namespace std;
 
 int FibonacciBase(int N, int X, int Y) {
@@ -21,7 +22,7 @@ int Fibonacci(int N) {
 
 int main(void) {
   for (int I = 0; I <= 14; I++)
-    cout << I << " - " << Fibonacci(I) << endl;
+    cout << setw(2) << I << " - " << Fibonacci(I) << endl;
 
   cout << "\nTecle <Enter> para encerrar... ";
   cin.get();
