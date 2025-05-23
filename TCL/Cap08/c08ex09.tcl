@@ -3,11 +3,14 @@
 proc Fibonacci {N} {
   if {$N == 0} {
     return 0
-  } elseif {$N == 1} {
+  }
+  if {$N == 1} {
     return 1
-  } else {
+  }
+  if {$N >= 2} {
     return [expr {[Fibonacci [expr {$N - 1}]] + [Fibonacci [expr {$N - 2}]]}]
   }
+  return 0 ;# valor padrão para evitar erro
 }
 
 for {set I 0} {$I <= 14} {incr I} {
