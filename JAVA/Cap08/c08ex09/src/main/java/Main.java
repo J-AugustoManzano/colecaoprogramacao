@@ -10,7 +10,7 @@ public class Main {
             return 1;
         if (N >= 2)
             return Fibonacci(N - 1) + Fibonacci(N - 2);
-        return 0; // Projeto: Para evitar aviso de retorno implícito
+        return 0; // Para evitar aviso de retorno implícito
     }
 
     public static void main(String[] args) {
