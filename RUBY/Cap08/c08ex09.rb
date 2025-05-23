@@ -4,11 +4,13 @@
 
 def fibonacci(n)
   if (n == 0)
-    0
-  elsif (n == 1)
-    1
-  else
-    fibonacci(n - 1) + fibonacci(n - 2)
+   return  0
+  end
+  if (n == 1)
+    return 1
+  end
+  if (n >= 2)
+    return fibonacci(n - 1) + fibonacci(n - 2)
   end
 end
 
