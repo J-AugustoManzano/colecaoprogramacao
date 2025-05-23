@@ -5,11 +5,14 @@ import * as rls from 'readline-sync';
 function FibonacciBase(N: number, X: number, Y: number): number {
   if (N == 0) {
     return X;
-  } else if (N == 1) {
+  } 
+  if (N == 1) {
     return Y;
-  } else {
+  } 
+  if (N >= 2) {
     return FibonacciBase(N - 1, Y, X + Y);
   }
+  return 0;
 }
 
 function Fibonacci(N: number): number {
